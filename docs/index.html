@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Powerful Site Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Powerful&rdquo; Documentation by &ldquo;Filip Stefansson&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Powerful&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 30/8/2012<br>
+					By: Filip Stefansson<br>
+					Email: <a href="mailto:youremail@yourdomain.com">filip.stefansson@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/filipstefansson">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">Project Structure</a></li>
+			<li><a href="#colrs">Update colors</a></li>
+			<li><a href="#javascript">Portfolio sorting</a></li>
+			<li><a href="#icons">Icons</a></li>
+			<li><a href="#twitter">Twitter Feed</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) Project Structure</strong> - <a href="#toc">top</a></h3>
+
+		<h3>CSS</h3>
+		<p>This template is created using LESS, which will allow you to do changes and improve it rapidly. For more information about LESS and how to use it can be found <a href="http://lesscss.org">here</a>.</p>
+
+		<p>However, you are not required to user LESS, since regular CSS-files are included aswell. If you want to edit the CSS without editing the .less-files, do the changes directly in <code>/css/style.css</code>.<p>
+
+		<pre><code>
+/css/
+   - <strong>style.css</strong> - The regluar CSS-file included in the HTML.
+   - <strong>style.less</strong> - The mail LESS file that includes the rest of the files.
+   - <strong>reset.less</strong> - Resets all CSS.
+   - <strong>skeleton.less</strong> - The resposive grid.
+   - <strong>fancybox.less</strong> - CSS for the lightbox.
+   - <strong>font-awesome.less</strong> - Icons fonts.
+   - <strong>nivo-slider.less</strong> - CSS for the slider.
+   - <strong>mixins.less</strong> - Mixins for rapid development.
+   /fonts/
+      - <em>This folder includes the icon fonts used.</em>
+		</code></pre>
+		
+		<h3>HTML</h3>
+		
+		<p>There are nine different page templates included, all located in the base folder. </p>
+
+		<pre><code>
+   - <strong>index.html</strong> - The frontpage.
+   - <strong>page.html</strong> - A standard page with a sidebar to the left.
+   - <strong>page-sidebar-left.html</strong> - A standard page with a sidebar to the right.
+   - <strong>full-with.html</strong> - A standard page without sidebar.
+   - <strong>blog.html</strong> - The blog page.
+   - <strong>blog-single.html</strong> - A single blog post.
+   - <strong>portfolio.html</strong> - A portfolio page with four columns.
+   - <strong>portfolio-3.html</strong> - A portfolio page with three columns.
+   - <strong>contact.html</strong> - The contact page.
+		</code></pre>
+
+		<p>There are also four pages that presents the features of the template, where you can learn better how to use the template.</p>
+
+	<pre><code>
+   - <strong>features.html</strong> - An overview over all the features the template offers.
+   - <strong>grid.html</strong> - A page showcasing the grid.
+   - <strong>icons.html</strong> - See all the avilable icons.
+   - <strong>services.html</strong> - An example of a services page.
+		</code></pre>
+
+
+		<h3>Javascript</h3>
+
+		<p>All Javascript-files are located i the <code>/js/</code>-folder. If you're familiar with CoffeScript, you can edit script.coffee. Otherwise, edit script.js.</p>
+
+		<pre><code>
+   - <strong>plugins.js</strong> - All jQuery plugins used.
+   - <strong>script.js</strong> - All the javscript.
+   - <strong>script.coffee</strong> - The file that generates script.js.
+      /libs/
+         <em>This folder includes jQuery and Modernizr, which are both JavaScript libraries.</em>
+		</code></pre>
+
+		<hr>
+
+		<h3 id="colors"><strong>B) Update colors</strong> - <a href="#toc">top</a></h3>	
+			The template includes three different colors ready to use, but if your familiar to LESS you can easily change to any color you want by changing the <code>@baseColor</code>-variable around line 25 in <code>style.less</code>.
+
+			<pre><code>@red: #dd4b37;
+@blue: #2481ff;
+@green: #78ba37;
+@yellow: #dbd134;
+@purple: #ba55db;
+@pink: #e962a1;
+@grey: #676869;
+
+@baseColor: @red;</code></pre>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) Portfolio sorting</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The portfolio uses the jQuery plugin <a href="http://isotope.metafizzy.co">Isotope</a>, which allows smooth sorting and filtering. To add filters, just add this line inside the <code>#filters</code>-element in the portfolio file:</p>
+
+		<pre><code>&lt;li>&lt;a href="#" data-filter="<strong>.filter_name</strong>">Filter Name&lt;/a>&lt;/li></code></pre>
+		
+		<p>and then add the <code>.filter_name</code>-class to the portfolio item:</p>
+
+		<pre><code>&lt;div class="four columns item <strong>filter_name</strong>">
+  &lt;a href="img/temp/up.jpg" rel="portfolio" title="Description of the portfolio item.">
+    &lt;img src="img/temp/up_small.jpg" alt="">
+    &lt;h4>Portfolio item #2<&lt;h4>
+    &lt;p>Lorem ipsum dolor sit amet.&lt;/p>
+  &lt;/a>
+&lt;/div></code></pre>
+
+		<p>To add more than one category, just add more classes to the portfolio item.</p>
+
+		<hr>
+		
+		<h3 id="icons"><strong>D) Icons</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The icons are implemented by something called icon fonts, and that basically means you use vectorized icons in a font instead of regular letters, which makes them possible to scale to any size or be any color.</p>
+
+		<p>To use the icons you use the <code>&lt;i>&lt;/i></code>-element, and add the class that represent the icon you want to use. You can style the icons just like you would do with text. <a href="http://playground.pixby.se/powerful/icons.html">See all classes »</a></p>
+
+		<h5>Example:</h5>
+		<pre><code>&lt;i class="icon-bolt">&lt;/i>
+&lt;i class="icon-cloud">&lt;/i>
+&lt;i class="icon-bold" style="font-size: 30px; color: #555">&lt;/i>
+&lt;h3>&lt;i class="icon-phone">&lt;/i>Header with icon&lt;/h3></code></pre>
+
+		<hr>
+		
+		<h3 id="twitter"><strong>E) Twitter feed</strong> - <a href="#toc">top</a></h3>
+
+		<p>The Twitter feed in the footer will get the latest tweets from any public account. To choose what account, open <code>script.js</code> or <code>script.coffe</code> and change the <code>user</code>-variable around line 110. </p>
+
+		<h3 id="credits"><strong>F) Sources and credits</strong> - <a href="#toc">top</a></h3>
+
+		<ul>
+			<li><a href="http://nivo.dev7studios.com">Nivo Slider</a></li>
+			<li><a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a></li>
+			<li><a href="http://isotope.metafizzy.co">jQuery Isotope</a></li>
+		</ul>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
