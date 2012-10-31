@@ -524,6 +524,18 @@ td {
 .container .offset-by-fifteen {
   padding-left: 900px;
 }
+
+/* Fixed floating footer on About Us 
+page */
+@media only screen and (min-width: 900px) {
+  .floating-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 /* #Tablet (Portrait)
 ================================================== */
 /* Note: Design for a width of 768px */
