@@ -28,6 +28,21 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.about_photo {
+  background-color: gray;
+  height: 200px;
+  float: right !important;
+  margin-right: 0 !important;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.about_sidebar {
+  height: 300px;
+  background-color: gray;
+  float: right !important;
+}
 /* HTML5 Boilerplate  */
 article,
 aside,
@@ -527,7 +542,7 @@ td {
 
 /* Fixed floating footer on About Us 
 page */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) and (min-height: 500px) {
   .floating-footer {
     position: absolute;
     bottom: 0;
@@ -535,6 +550,7 @@ page */
     width: 100%;
   }
 }
+
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -2368,6 +2384,7 @@ header .header-notice {
   border-bottom: 7px solid #D10F0F;
   color: #fff;
   text-align: center;
+  height: 42px;
 }
 header .header-notice p {
   margin: 11px 0 6px 0;
@@ -3656,4 +3673,14 @@ a img.aligncenter {
 .color {
   position: absolute;
   left: 80px;
+}
+
+.inventory-headings {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p.inventory-contact {
+  margin-bottom: 5px;
 }
