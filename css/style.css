@@ -3693,6 +3693,16 @@ p.inventory-contact {
   margin-bottom: 5px;
 }
 
+.one-third h4 {
+  position: relative;
+  bottom: 15px;
+}
+
+.one-third p {
+  position: relative;
+  bottom: 17px;
+}
+
 /* For modern browsers */
 .cf:before,
 .cf:after {
