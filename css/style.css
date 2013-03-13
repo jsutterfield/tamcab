@@ -39,12 +39,14 @@
 }
 
 .about_sidebar {
-  height: 350px;
+  height: 210px;
   background-color: lightgray;
   float: right !important;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   margin-right: 0px !important;
   padding: 0 10px;
+  width: 440px !important;
+  font-size: 1.1em;
 }
 
 .about_sidebar h2, .about_sidebar p {
@@ -556,6 +558,9 @@ page */
     bottom: 0;
     left: 0;
     width: 100%;
+  }
+  .about_photo, .about_sidebar {
+    display: none;
   }
 }
 
@@ -3717,4 +3722,50 @@ p.inventory-contact {
 /* For IE 6/7 (trigger hasLayout) */
 .cf {
     *zoom:1;
+}
+
+/*About us quick stylings*/
+.about-p1 {
+  margin-bottom: 75px !important;
+}
+
+.about-p2 {
+  position: relative !important;
+  bottom: 60px !important;
+  width: 475px !important;
+}
+
+.what-p1 {
+  margin-bottom: 95px !important;
+}
+
+.what-p2 {
+  position: relative !important;
+  bottom: 75px !important;
+  width: 475px !important; 
+}
+
+.what-p3 {
+  position: relative !important;
+  bottom: 85px !important;
+}
+
+.what_about_sidebar {
+  height: 180px;
+  background-color: lightgray;
+  float: right !important;
+  margin-bottom: 57px;
+  margin-right: 0px !important;
+  padding: 0 10px;
+  font-size: 1.1em;
+}
+
+.portfolio .item {
+  padding-bottom: 10px;
+}
+
+.more-info {
+  color: #D10F0F;
+  text-decoration: underline;
+  font-weight: bold;
 }
