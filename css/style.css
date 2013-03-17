@@ -30,10 +30,9 @@
 }
 
 .about_photo {
-  background-color: gray;
   height: 200px;
   margin-right: 0 !important;
-  margin-top: 24px;
+  margin-top: 24px !important;
   margin-bottom: 10px;
   float: right !important;
 }
@@ -559,11 +558,12 @@ page */
     left: 0;
     width: 100%;
   }
-  .about_photo, .about_sidebar {
-    display: none;
-  }
 }
 
+@media only screen (max-width: 200px) {
+ 
+  }
+}
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -2332,8 +2332,9 @@ header .logo_text {
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
   header #logo {
-    background-image: url('../img/logo@2x.png');
-    background-size: 250px 70px;
+    /*background-image: url('../img/site_logo1.jpg');
+    background-size: 250px 70px;*/
+    display: none;
   }
 }
 header nav.menu {
@@ -3769,3 +3770,16 @@ p.inventory-contact {
   text-decoration: underline;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 767px) {
+  .about_sidebar, .what_about_sidebar {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .what-p2, .about-p2 {
+    width: auto !important;
+  }
+}
+ 
